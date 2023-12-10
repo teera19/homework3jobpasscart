@@ -1,0 +1,846 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: -30px;
+}
+
+.one {
+  font-size: 10px;
+  background-color: red;
+  color: rgb(255, 253, 253);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  margin-left: 80px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+.logo img {
+  margin-left: 65px;
+  width: 300px;
+  height: 100%;
+  margin-top: -20px;
+}
+
+.about {
+  margin-left: -50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.about h2 {
+  margin-left: 10px;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -20px;
+  margin-right: 50px;
+}
+
+.login img {
+  margin-right: 10px;
+}
+
+.login h2 {
+  margin-left: 10px;
+}
+
+.space {
+  margin-bottom: 9px;
+}
+
+.search {
+  padding: 10px;
+  width: 48px;
+  height: 50%;
+}
+
+.shop {
+  position: relative;
+  width: 30px;
+  height: 50%;
+}
+
+/* Mycard */
+
+.my {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 65px;
+}
+
+.item-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 450px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.product1 {
+  position: absolute;
+  width: 60px;
+  margin-left: 0px;
+  margin-top: 50px;
+}
+
+/* Docs */
+.product01 {
+  position: relative;
+  flex: 1 1 1px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  margin-top: -20px;
+  height: 200px;
+}
+
+.product02 {
+  width: 500px;
+  position: relative;
+  flex: 1 1 1px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 50px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.product01item1 {
+  position: absolute;
+  width: 125px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+.dotcontainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.docs {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 40;
+}
+
+.th1 {
+  position: absolute;
+  margin-top: 130px;
+  margin-left: 270px;
+}
+
+.container .dotdropdown {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 70px;
+}
+
+.gender-label,
+.gender2-label {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.dot {
+  content: "";
+  position: absolute;
+  margin-top: 190px;
+  margin-left: 30px;
+  left: 210px;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: none;
+}
+
+.dot.second {
+  left: 230px;
+}
+
+.dot.third {
+  left: 250px;
+}
+
+.dot.four {
+  left: 270px;
+}
+
+.dotdropdown {
+  position: relative;
+}
+
+.dotdropdown::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+select {
+  text-align: center;
+  position: absolute;
+  border-radius: 9px;
+  width: 100px;
+  height: 37px;
+
+}
+
+.dot1 {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 30px;
+  left: 190px;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: none;
+}
+
+.dot.second1 {
+  left: 210px;
+}
+
+.dot.third1 {
+  left: 230px;
+}
+
+.dot.four1 {
+  left: 250px;
+}
+
+.dotdropdown {
+  position: relative;
+}
+
+.dotdropdown select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.dotdropdown::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.product03 {
+  font-family: Ubuntu, sans-serif;
+  position: relative;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-right: 150px;
+  width: 520px;
+  height: 400px;
+  margin-top: 80px;
+}
+
+.product03 h2 {
+  margin: 20px;
+}
+
+.Subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.Subtotal .total {
+  border-radius: 8px;
+  font-size: 20px;
+  color: rgb(154, 154, 154);
+  margin-left: 20px;
+  margin-top: -20px;
+}
+
+.total1 {
+  font-size: 25px;
+}
+
+.Subtotal .bth {
+  margin-top: -15px;
+  margin-right: 20px;
+  color: rgb(24, 23, 22);
+}
+
+.button1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.btn-apply {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid #03ffd1;
+  background-color: #ffffff;
+  color: #03ffd1;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 320px;
+  margin-bottom: -20px;
+}
+
+.product03 hr {
+  margin-top: 80px;
+}
+
+input {
+  position: absolute;
+  margin-left: 50px;
+  margin-bottom: -28px;
+  border-radius: 3px;
+  width: 250px;
+  height: 40px;
+}
+
+.button1 img {
+  position: absolute;
+  height: 30px;
+  margin-bottom: -30px;
+}
+
+.button2 {
+  justify-content: row;
+  margin-left: 170px;
+  position: absolute;
+  width: 450px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(9, 73, 67, 0.314);
+  border: 2px solid #12cfad;
+  background-color: #12cfad;
+  color: #000000;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.bth1 {
+  color: #087d68;
+  font-size: 35px;
+}
+
+
+
+
+
+/* responsive */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .nav {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .about,
+  .login {
+    margin: 10px 0;
+  }
+
+  .login {
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -10px;
+  }
+
+  .space {
+    margin-bottom: 1px;
+  }
+
+  .logo img {
+    margin-top: -12px;
+    margin-left: -250px;
+    width: 200px;
+  }
+
+  .about {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+    
+  }
+
+  .my {
+    margin-left: 180px;
+  }
+
+  .item-group {
+    flex-direction: column;
+  }
+
+  .product1 {
+    margin-top: 70px;
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .product01 {
+    margin-right: 150px;
+    width: 420px;
+  }
+
+  .product02 {
+    margin-right: 150px;
+    width: 420px;
+  }
+
+  .docs {
+    margin-left: 250px;
+  }
+
+  .product03 {
+    margin-top: -10px;
+    margin-right: 70px;
+    width: 420px;
+  }
+
+  .button1 img {
+    margin-left: 10px;
+    margin-top: -40px;
+  }
+
+  .button1 input {
+    margin-top: -40px;
+    width: 50%;
+  }
+
+  .btn-apply {
+    margin-bottom: -100px;
+    margin-left: 80px;
+  }
+
+  .button2 {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 780px) {
+  .nav {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .logo img {
+    margin-top: -18px;
+    margin-left: -5px;
+    width: 200px;
+  }
+
+  .about {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 30%;
+    margin-bottom: 2px;
+  }
+
+  .search {
+    position: absolute;
+    margin-left: -40px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .space {
+
+    margin-top: 8px;
+    margin-right: -1px;
+  }
+
+  .login {
+    width: 500px;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -10px;
+  }
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .item-group {
+    width: -50px;
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .my{
+    flex-direction: column;
+    width: 120px;
+    margin-left: 300px;
+  }
+  .cart{
+    margin-left: -860px;
+    width: 10px;
+  }
+
+  .product1 {
+    margin-top: 70px;
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .docs {
+    margin-left: 250px;
+  }
+
+  .product03 {
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .button1 img{
+    margin-left: -5%;
+  }
+  .button1 input{
+    width: 200px;
+    margin-left: 5%;
+  }
+  .btn-apply{
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 60%;
+  }
+  .button2{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .one {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 900px) {
+  .nav {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .logo img {
+    margin-top: -18px;
+    margin-left: -5px;
+    width: 200px;
+  }
+
+  .about {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 30%;
+    margin-bottom: 2px;
+  }
+
+  .search {
+    position: absolute;
+    margin-left: -40px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .space {
+
+    margin-top: 8px;
+    margin-right: -1px;
+  }
+
+  .login {
+    width: 500px;
+    font-size: 10px;
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -10px;
+  }
+
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 100px;
+  }
+
+  .item-group {
+    width: -50px;
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .my{
+    flex-direction: column;
+    width: 120px;
+    margin-left: 300px;
+  }
+  .cart{
+    margin-left: -860px;
+    width: 10px;
+  }
+
+  .product1 {
+    margin-top: 70px;
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .docs {
+    margin-left: 250px;
+  }
+
+  .product03 {
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .button1 img{
+    margin-left: -5%;
+  }
+  .button1 input{
+    width: 200px;
+    margin-left: 5%;
+  }
+  .btn-apply{
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 60%;
+  }
+  .button2{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .one {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 901px) and  (max-width: 1000px){
+  .nav {
+    flex-direction: row;
+    position: relative;
+  }
+
+  .logo img {
+    margin-top: -18px;
+    margin-left: -20px;
+    width: 250px;
+  }
+
+  .about {
+    position: absolute;
+    font-size: 12px;
+    margin-left: 250px;
+    margin-bottom: 2px;
+  }
+
+  .search {
+    position: absolute;
+    margin-left: -40px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .space {
+
+    margin-top: 8px;
+    margin-right: -1px;
+  }
+
+  .login {
+    font-size: 10px;
+    position: absolute;
+    width: 200px;
+    margin-left: 650px;
+    margin-top: -10px;
+  }
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 650px;
+
+  }
+
+  .item-group {
+    margin-left: -600px;
+    flex-direction: column;
+  }
+  .my{
+    margin-left: -570px;
+  }
+
+  .product1 {
+    margin-top: 70px;
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .docs {
+    margin-left: 250px;
+  }
+
+  .product03 {
+    margin-top: 20px;
+    margin-left: -490px;
+  }
+
+  .one {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .nav {
+    /* border: 2px solid red; */
+    flex-direction: row;
+    position: relative;
+  }
+
+  .logo img {
+    margin-top: -18px;
+    margin-left: -5px;
+    width: 300px;
+  }
+
+  .about {
+    position: absolute;
+    font-size: 15px;
+    margin-left: 30%;
+    margin-bottom: 2px;
+  }
+
+  .search {
+    position: absolute;
+    margin-left: -40px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .space {
+
+    margin-top: 8px;
+    margin-right: -1px;
+  }
+
+  .login {
+    width: 500px;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 76%;
+    margin-top: -10px;
+  }
+
+  .container {
+    justify-content: center;
+    flex-direction: space-between;
+    margin-left: 800px;
+  }
+
+  .item-group {
+    /* border: 2px solid red; */
+    width: -50px;
+    margin-left: 100px;
+    flex-direction: column;
+  }
+  .my{
+    /* border: 2px solid red; */
+    flex-direction: column;
+    width: 120px;
+    margin-left: 300px;
+  }
+  .cart{
+    margin-left: -860px;
+    width: 10px;
+  }
+
+  .product1 {
+    margin-top: 70px;
+    width: 35px;
+    margin-left: 20px;
+  }
+
+  .docs {
+    margin-left: 250px;
+  }
+
+  .product03 {
+    /* border: 2px solid red; */
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 630px;
+  }
+  .button1 img{
+    margin-left: -5%;
+  }
+  .button1 input{
+    width: 200px;
+    margin-left: 5%;
+  }
+  .btn-apply{
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 60%;
+  }
+  .button2{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .one {
+    margin-left: 20px;
+  }
+
+}

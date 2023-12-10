@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo"><img src="Logo.png" alt="logo"></div>
+    <div class="about">
+      <h2>ABOUT US</h2>
+      <h2>PASSCARD</h2>
+      <h2>PROFILE</h2>
+    </div>
+    <div class="login">
+      <img src="search.png" alt="search" class="search">
+      <img src="shop.png" alt="shop" class="shop">
+      <h2>LOGIN</h2>
+      <h2 class="space">|</h2>
+      <h2>SING UP</h2>
+      <p class="one">1</p>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="cart">
+      <div class="my">
+        <h1>My Cart</h1>
+      </div>
+      <div class="item-group">
+        <div class="item">
+          <div class="product01">
+            <img src="bin.png" alt="Product 1" class="product1">
+            <img src="docs.jpg" alt="docs" class="product01item1">
+            <div class="dotcontainer">
+              <div class="dot"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <h2 class="docs">Google Docs</h2>
+            <h2 class="th1" >THB 150</h2>
+            <div class="dotdropdown" id="dotDropdown">
+              <select id="gender" name="gender">
+                <option value="lv">LV</option>
+                <option value="male">LV 1-3</option>
+                <option value="female">LV 2-3</option>
+                <option value="other">LV 3-3</option>
+              </select>
+            </div>
+          </div>
+          <div class="product02">
+            <img src="slides.jpg" alt="slides" class="product01item1">
+            <img src="bin.png" alt="bin" class="product1">
+            <div class="dotcontainer">
+              <div class="dot1"></div>
+              <div class="dot second1"></div>
+              <div class="dot third1"></div>
+              <div class="dot four1"></div>
+            </div>
+            <h2 class="docs">Google Slides</h2>
+            <h2 class="th1">THB 150</h2>
+            <div class="dotdropdown" id="dotDropdown">
+              <select name="gender2" id="gender2">
+                <option value="lv">LV</option>
+                <option value="lv1-4">LV 1-4</option>
+                <option value="lv2-4">LV 2-4</option>
+                <option value="lv3-4">LV 3-4</option>
+                <option value="lv4-4">LV 4-4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="product03">
+      <h2>Order Info</h2>
+      <div class="Subtotal">
+      <p class="total">Subtotal</p>
+      <h2 class="bth" >THB 300</h2>
+    </div>
+    <div class="button1">
+      <img src="coupon.png" alt="coupon">
+      <input type="text" placeholder="  Promotion code">
+      <button class="btn-apply">APPLY</button>
+    </div>
+      <hr>
+      <div class="Subtotal">
+      <h2 class="total1">Total payment</h2>
+      <h2 class="bth1">THB 300</h2>
+    </div>
+      <button class="button2">LOG IN TO CHECKOUT</button>
+  </div>
+</div>
+
+  <!-- script -->
+  <!-- Docs -->
+  <script>
+    document.getElementById("gender").addEventListener("change", function () {
+      const dropdown = document.getElementById("dotDropdown");
+      const dot = document.querySelector(".dot");
+      const dotSecond = document.querySelector(".dot.second");
+      const dotThird = document.querySelector(".dot.third");
+
+      if (this.value === "male") {
+        dot.style.display = "block";
+        dotSecond.style.display = "none";
+        dotThird.style.display = "none";
+        dotFour.style.display = "none";
+      } else if (this.value === "female") {
+        dot.style.display = "block";
+        dotSecond.style.display = "block";
+        dotThird.style.display = "none";
+      } else if (this.value === "other") {
+        dot.style.display = "block";
+        dotSecond.style.display = "block";
+        dotThird.style.display = "block";
+      } else {
+        dot.style.display = "none";
+        dotSecond.style.display = "none";
+        dotThird.style.display = "none";
+      }
+    });
+  </script>
+
+
+<!-- slides -->
+
+
+    <script>
+    document.getElementById("gender2").addEventListener("change", function () {
+      const dropdown = document.getElementById("dotDropdown");
+      const dot1 = document.querySelector(".dot1");
+      const dotSecond1 = document.querySelector(".dot.second1");
+      const dotThird1 = document.querySelector(".dot.third1");
+      const dotFour1 = document.querySelector(".dot.four1");
+
+      if (this.value === "lv1-4") {
+        dot1.style.display = "block";
+        dotSecond1.style.display = "none";
+        dotThird1.style.display = "none";
+        dotFour1.style.display = "none";
+      } else if (this.value === "lv2-4") {
+        dot1.style.display = "block";
+        dotSecond1.style.display = "block";
+        dotThird1.style.display = "none";
+        dotFour1.style.display = "none";
+      } else if (this.value === "lv3-4") {
+        dot1.style.display = "block";
+        dotSecond1.style.display = "block";
+        dotThird1.style.display = "block";
+        dotFour1.style.display = "none";
+      } else if(this.value=="lv4-4"){
+        dot1.style.display = "block";
+        dotSecond1.style.display = "block";
+        dotThird1.style.display = "block";
+        dotFour1.style.display = "block";
+      }else{
+        dot1.style.display = "none";
+        dotSecond1.style.display = "none";
+        dotThird1.style.display = "none";
+        dotFour1.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+
+</html>
